@@ -6,6 +6,12 @@
         <Projects Include="builder\builder.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="installer\installer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="server\server.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -23,14 +29,32 @@
     <Target Name="builder:Make">
         <MSBuild Projects="builder\builder.dproj" Targets="Make"/>
     </Target>
+    <Target Name="installer">
+        <MSBuild Projects="installer\installer.dproj"/>
+    </Target>
+    <Target Name="installer:Clean">
+        <MSBuild Projects="installer\installer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="installer:Make">
+        <MSBuild Projects="installer\installer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="server">
+        <MSBuild Projects="server\server.dproj"/>
+    </Target>
+    <Target Name="server:Clean">
+        <MSBuild Projects="server\server.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="server:Make">
+        <MSBuild Projects="server\server.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="builder"/>
+        <CallTarget Targets="builder;installer;server"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="builder:Clean"/>
+        <CallTarget Targets="builder:Clean;installer:Clean;server:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="builder:Make"/>
+        <CallTarget Targets="builder:Make;installer:Make;server:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
