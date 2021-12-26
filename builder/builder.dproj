@@ -50,8 +50,8 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
-        <DCC_ExeOutput>D:\Borland\D10\Projects\IC3K\bin\</DCC_ExeOutput>
+        <DCC_DcuOutput>D:\SRC\git\incommand3000\builder\out\</DCC_DcuOutput>
+        <DCC_ExeOutput>D:\SRC\git\incommand3000\bin\</DCC_ExeOutput>
         <DCC_E>false</DCC_E>
         <DCC_N>false</DCC_N>
         <DCC_S>false</DCC_S>
@@ -60,8 +60,8 @@
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
         <SanitizedProjectName>builder</SanitizedProjectName>
         <DCC_DcpOutput>D:\Borland\D10\Projects\IC3K\util\dcu\</DCC_DcpOutput>
-        <DCC_BplOutput>D:\Borland\D10\Projects\IC3K\util\dcu\</DCC_BplOutput>
-        <DCC_UnitSearchPath>D:\Borland\D10\Projects\IC3K\lib;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_BplOutput>D:\SRC\git\incommand3000\builder\out\</DCC_BplOutput>
+        <DCC_UnitSearchPath>D:\SRC\git\incommand3000\lib;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
@@ -134,7 +134,6 @@
         <DCC_DcpOutput>D:\SRC\git\incommand3000\builder\out\</DCC_DcpOutput>
         <DCC_ExeOutput>D:\SRC\git\incommand3000\bin\</DCC_ExeOutput>
         <DCC_BplOutput>D:\SRC\git\incommand3000\builder\out\</DCC_BplOutput>
-        <DCC_UnitSearchPath>D:\SRC\git\incommand3000\lib;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>

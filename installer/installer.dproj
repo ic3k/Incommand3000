@@ -129,7 +129,6 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
-        <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>D:\Borland\D10\Projects\(None)</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
